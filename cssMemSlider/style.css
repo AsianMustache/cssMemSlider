@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+.container {
+    margin: 0 auto;    
+    width: 1280px;
+    background-color: darkgray;    
+}
+
+.title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 3em;
+}
+
+.mem-container {
+    display: flex;
+}
