@@ -1,0 +1,111 @@
+html {
+    scroll-behavior: smooth; 
+}
+
+.container {
+    margin: 0 auto;    
+    width: 1280px;
+    background-color: #232020;    
+}
+
+.mem-container {
+    width: 768px;
+    height: 540px;
+    
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.mem-sliders {
+    width: 500%;
+    height: 100%;    
+    display: flex;  
+    margin: 0 auto;
+}
+
+.mem-slide {
+    width: 20%;
+    transition: all 0.25s ease-in-out;
+}
+
+.text-slider {
+    border: 2px solid yellow;
+    width: 30%;
+    margin: 70px 0 10px 190px;
+    background-color: white;
+}
+
+.text-slider p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #232020;
+    margin-left: 5px;
+}
+
+.pagination {
+    position: absolute;
+    display: flex;
+    bottom: 420px;
+    left: 660px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination-bar {
+    width: 25px;
+    height: 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 8px;
+    opacity: 0.5; 
+}
+
+.pagination-bar:hover {
+    opacity: 1;
+    transition: 0.25s ease-in-out;
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+input[name="slides"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.mem-slide img {
+    margin: 0 25%;
+    width: 50%;
+    height: 50%;
+}
+
+#slider1:checked ~ .slide1 {
+    margin-left: 0;
+}
+
+#slider2:checked ~ .slide1 {
+    margin-left: -20%;
+}
+
+#slider3:checked ~ .slide1 {
+    margin-left: -40%;
+}
+
+#slider4:checked ~ .slide1 {
+    margin-left: -60%;
+}
+
+#slider5:checked ~ .slide1 {
+    margin-left: -80%;
+}
+
+@media (max-width: 1496px) {
+    .pagination {
+        position: absolute;
+        display: flex;
+        bottom: 120px;
+        left: 570px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
